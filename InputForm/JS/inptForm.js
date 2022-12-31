@@ -49,3 +49,11 @@ pwd.addEventListener('input', function () {
         passwordEror.textContent = "Password is incorrect";
     }
 });
+
+//UC5-Salary Validation
+const salary = document.querySelector('#salary')
+const output = document.querySelector('.salary-output')
+output.textContent = salary.value;
+salary.addEventListener('input', function () {
+    output.textContent = salary.value;
+});
