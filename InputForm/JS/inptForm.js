@@ -21,3 +21,18 @@ email.addEventListener('input', function () {
         emailError.textContent = "Email is not valid";
     }
 });
+
+//UC3 Mobile Number Validation
+const tele=document.querySelector("#tele");
+const teleError=document.querySelector('.tele-error');
+tele.addEventListener('input',function()
+{
+    let phoneNumberRegex = RegExp("^[0-9]{2}[ ][0-9]{10}$");
+    if (phoneNumberRegex.test(tele.value)) 
+    {
+        teleError.textContent = ""
+    }
+    else{
+        teleError.textContent = "Mobile number is not valid";
+    }
+});
